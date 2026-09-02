@@ -1,0 +1,28 @@
+{
+  "name": "propelauth_pow_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.tsx",
+    "start": "tsx src/app.tsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yunus",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@propelauth/express": "^2.1.35",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
