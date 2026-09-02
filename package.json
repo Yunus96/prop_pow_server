@@ -1,12 +1,12 @@
 {
   "name": "propelauth_pow_server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/app.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/app.tsx",
-    "start": "tsx src/app.tsx",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/app.tsx",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "author": "yunus",
   "license": "ISC",
