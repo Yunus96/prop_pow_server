@@ -12,7 +12,7 @@ const { requireUser } = propelAuth.initAuth({
 })
 
 
-app.use(cors())
+app.use(cors({origin: process.env.NEXT_PUBLIC_API_URL!}))
 
 app.get('/api/whoami', requireUser, (req, res) => {
     res.send({ user: req.user?.userId })
